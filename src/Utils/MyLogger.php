@@ -42,7 +42,7 @@ class MyLogger {
     /***
      * constructor
      */
-    public function __construct( $log_file = null, $echo_log = true, $log_level = null ) {
+    public function __construct( $log_file = null, $echo_log = false, $log_level = null ) {
         $this->log_file = $log_file;
         $this->log_level = $log_level;
         $this->echo_log = $echo_log;
