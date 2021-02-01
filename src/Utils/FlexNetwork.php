@@ -72,7 +72,7 @@ class FlexNetwork extends Network {
     }
     
     static private function dh($dec, $prepend_zero = false) {
-        $hex = dechex($dec);
+        $hex = dechex(intval($dec));
         $pre = strlen($hex) % 2 == 0 ? '' : '0';
         return $pre . $hex;
     }
